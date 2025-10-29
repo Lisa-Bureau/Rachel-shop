@@ -1,0 +1,27 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.button-filter {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    & button {
+        background-color: var(--primary-color);
+        border: none;
+        width: 10rem;
+        padding: 0.5rem;
+        font-family: var(--title-font);
+        color: var(--light-color);
+        font-size: 1.5rem;
+        border-radius: 1rem;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
