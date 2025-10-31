@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import '../styles/NavBar.css'
 import ProductPanier from './ProductPanier';
+import type { NavBarType } from '../interfaces';
 
-function NavBar({count, panier}) {
+function NavBar({count, panier} : NavBarType) {
     const [displayPanier, setDisplayPanier] = useState(false);
     const total = panier.reduce((acc, product) => acc + product.price, 0);
 

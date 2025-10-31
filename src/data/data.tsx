@@ -1,4 +1,6 @@
-const Products = [
+import type { productType } from "../interfaces";
+
+const Products : productType[] = [
     {
         "id": 1,
         "category": "Broche",
